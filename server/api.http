@@ -1,0 +1,26 @@
+# signUp route
+
+POST http://localhost:5000/auth/v1/user/register
+Content-Type: application/json
+
+{
+  "username": "karthickkannan",
+  "email": "kkedits77@gmail.com",
+  "password": "8939065699@@"
+}
+
+###
+# signIn route 
+POST  http://localhost:5000/auth/v1/user/login
+Content-Type: application/json
+
+{
+  "email": "kkedits77@gmail.com",
+  "password": "8939065699@@"
+}
+
+###
+# current user 
+GET http://localhost:5000/auth/v1/user/current
+Content-Type: application/json
+token : eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYwMGM0ZWIwNGU2MjMzNTg0YWFhNmJmYSIsImlhdCI6MTYxMTQyMjUzNiwiZXhwIjoxNjExNTk1MzM2fQ.1Ou2USmCcQvsKs2NsGjswYPKiznWkSqlER1-EBGCJ7Q
